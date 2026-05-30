@@ -1,0 +1,25 @@
+# Local recording output and participant data
+recordings_local/
+recordings/
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Temporary files
+*.tmp
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

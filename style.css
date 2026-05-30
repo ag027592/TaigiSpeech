@@ -1,0 +1,247 @@
+:root { --primary-color: #3498db; --secondary-color: #2ecc71; --danger-color: #e74c3c; --warning-color: #f39c12; --light-bg: #f4f4f9; --dark-text: #333; --light-text: #fff; --border-color: #ddd; --grey-btn: #95a5a6; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: var(--light-bg); color: var(--dark-text); margin: 0; padding: 15px; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; -webkit-tap-highlight-color: transparent; }
+#app { width: 100%; max-width: 600px; background: var(--light-text); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden; }
+.screen { display: none; padding: 25px 30px; }
+.screen.active { display: block; }
+.screen h1 { font-size: 26px; text-align: center; margin-bottom: 10px; color: var(--primary-color); }
+.screen p { font-size: 16px; color: #666; text-align: center; margin-bottom: 30px; line-height: 1.6; }
+form { margin-top: 20px; }
+.form-group { margin-bottom: 25px; }
+.form-group label, fieldset legend { display: block; font-weight: bold; margin-bottom: 10px; font-size: 18px; }
+input[type="text"], input[type="number"], input[type="tel"], select, textarea { width: 100%; padding: 15px; font-size: 16px; border: 2px solid var(--border-color); border-radius: 8px; box-sizing: border-box; transition: border-color 0.2s; }
+
+/* Improve keyboard focus visibility for accessibility. */
+input:focus, select:focus, textarea:focus, button:focus, .video-thumbnail-container:focus { 
+    outline: 4px solid rgba(52, 152, 219, 0.6); 
+    border-color: var(--primary-color); 
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.8);
+}
+
+.form-group small { color: #777; margin-top: 5px; display: block; }
+.error { color: var(--danger-color); font-weight: bold; height: 20px; text-align: center; margin-top: 15px; }
+
+/* Button containers and base button styles. */
+.buttons-container { display: flex; gap: 15px; margin-top: 20px; }
+.btn { width: 100%; padding: 18px; font-size: 20px; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; transition: all 0.1s; position: relative; }
+.btn:active, .btn.active-key { transform: scale(0.96); box-shadow: inset 0 3px 5px rgba(0,0,0,0.2); }
+
+.btn-primary { background-color: var(--primary-color); color: white; }
+.btn-secondary { background-color: var(--grey-btn); color: white; }
+.btn-secondary:hover { background-color: #7f8c8d; }
+.btn:disabled { background-color: #ccc; cursor: not-allowed; transform: none; }
+
+fieldset { border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; margin-bottom: 25px; }
+fieldset legend { font-size: 1em; padding: 0 10px; }
+.form-row { display: flex; gap: 20px; }
+.form-row .form-control { flex: 1; }
+.checkbox-group div { margin-bottom: 12px; font-size: 16px; }
+.other-input { display: flex; align-items: center; }
+.other-input input[type="text"] { margin-left: 8px; flex-grow: 1; }
+.fluency-item { margin-bottom: 20px; }
+.fluency-item .lang-name { font-weight: bold; font-size: 18px; margin-bottom: 12px; }
+.fluency-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+.fluency-options label { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; border: 2px solid var(--border-color); border-radius: 8px; cursor: pointer; transition: all 0.2s; text-align: center; }
+.fluency-options input[type="radio"] { display: none; }
+.fluency-options .score { font-size: 22px; font-weight: bold; }
+.fluency-options .desc { font-size: 14px; color: #666; }
+.fluency-options label:has(input[type="radio"]:checked) { border-color: var(--secondary-color); background-color: #e8f5e9; transform: translateY(-2px); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.fluency-options label:has(input[type="radio"]:checked) .desc { color: #333; }
+.language-options { display: flex; flex-direction: column; gap: 20px; margin-top: 40px; }
+.btn-language-mode { padding: 25px; font-size: 22px; }
+#mode-tw-only { background-color: var(--secondary-color); color: white; }
+#mode-bilingual { background-color: var(--primary-color); color: white; }
+.session-options { border: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.session-options::after { content: "請選擇一項 (可用 Tab 鍵切換，或按數字鍵選擇)"; display: block; grid-column: 1 / -1; text-align: center; margin-top: 8px; font-size: 1em; color: #777; font-weight: bold; }
+.session-options label { display: block; border: 2px solid var(--border-color); border-radius: 12px; padding: 20px; cursor: pointer; transition: all 0.2s ease-in-out; text-align: center; position: relative; }
+
+/* Keep a tiny physical size so browsers still treat the hidden input as focusable. */
+.session-options input[type="radio"] { 
+    opacity: 0; 
+    position: absolute; 
+    width: 1px;  /* Required width and height keep browsers from ignoring the input. */
+    height: 1px; 
+    overflow: hidden;
+}
+
+.session-options .duration { font-size: 24px; font-weight: bold; color: var(--primary-color); margin-bottom: 5px; }
+.session-options .sentence-count { font-size: 16px; color: #666; }
+
+/* Selected state. */
+.session-options label:has(input[type="radio"]:checked) { border-color: var(--secondary-color); background-color: #e8f5e9; transform: scale(1.03); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.session-options label:has(input[type="radio"]:checked) .duration { color: var(--secondary-color); }
+
+/* Show focus on the outer label when Tab focuses the hidden radio input. */
+.session-options label:focus-within {
+    outline: 4px solid rgba(52, 152, 219, 0.6); 
+    border-color: var(--primary-color); 
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.8);
+}
+
+#main-screen { padding: 20px; }
+#progress-display { font-size: 18px; font-weight: bold; text-align: center; padding: 10px; background-color: #eaf2f8; border-radius: 8px; margin-bottom: 15px; }
+
+/* Video area. */
+.video-thumbnail-container { position: relative; width: 100%; aspect-ratio: 16 / 9; background-color: #000; border-radius: 12px; overflow: hidden; cursor: pointer; margin-bottom: 20px; }
+#video-poster { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.video-thumbnail-container:hover #video-poster { transform: scale(1.05); }
+.play-button-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 60px; color: rgba(255, 255, 255, 0.8); background-color: rgba(0, 0, 0, 0.4); width: 80px; height: 80px; border-radius: 50%; display: flex; justify-content: center; align-items: center; line-height: 80px; padding-left: 5px; transition: background-color 0.3s; pointer-events: none; /* Let clicks pass through to the container. */ }
+.video-thumbnail-container:hover .play-button-overlay { background-color: rgba(228, 34, 34, 0.8); }
+.video-thumbnail-container small { position: absolute; bottom: 5px; right: 10px; color: white; background-color: rgba(0,0,0,0.6); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+
+/* Inline video playback styles. */
+#context-video { width: 100%; height: 100%; object-fit: contain; background: black; }
+
+.script-to-read-container { background-color: #fdf3e6; border-radius: 8px; padding: 20px; text-align: center; margin-top: 20px; }
+.script-to-read-container h3 { margin-top: 0; font-size: 16px; color: #666; }
+
+/* Large scenario description. */
+.script-description {
+    font-size: 32px; /* Extra-large text. */
+    font-weight: bold;
+    color: #c0392b; /* High-visibility color. */
+    margin: 10px 0 20px 0;
+    line-height: 1.4;
+}
+
+.script-display { margin-bottom: 20px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+.script-display:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+.script-display label { font-size: 16px; font-weight: bold; color: #555; display: block; margin-bottom: 5px;}
+.script-display p { margin: 0; line-height: 1.5; }
+
+#script-to-read-zh { font-size: 22px; color: #333; }
+/* Taigi reference text styles. */
+#script-to-read-tw { font-size: 24px; font-weight: bold; color: #2980b9; }
+
+/* Collapsible Taigi reference block, collapsed by default for older participants. */
+.taigi-reference { margin-top: 16px; }
+.taigi-reference[open] { margin-bottom: 4px; }
+.taigi-reference-toggle {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    padding: 12px 16px;
+    background-color: #fef5e7;
+    color: #b9770e;
+    border: 2px dashed #f5b041;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.15s, border-style 0.15s;
+}
+.taigi-reference-toggle:hover { background-color: #fcebc1; }
+.taigi-reference-toggle:focus { outline: 4px solid rgba(245, 176, 65, 0.5); }
+.taigi-reference-toggle::-webkit-details-marker { display: none; }
+.taigi-reference[open] .taigi-reference-toggle {
+    border-style: solid;
+    background-color: #fcebc1;
+    margin-bottom: 12px;
+}
+.taigi-reference .taigi-reference-when-open { display: none; }
+.taigi-reference[open] .taigi-reference-when-open { display: inline; }
+.taigi-reference[open] .taigi-reference-when-closed { display: none; }
+.script-display-tw { margin-bottom: 0 !important; border-bottom: none !important; padding-bottom: 0 !important; }
+
+/* Consent form screen. */
+.consent-pdf-wrap {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0 10px;
+    background: #f8f8f8;
+}
+#consent-iframe {
+    display: block;
+    width: 100%;
+    height: 480px;
+    border: none;
+    background: #fff;
+}
+.pdf-fallback {
+    padding: 8px 12px;
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    background: #fffaf0;
+    border-top: 1px dashed #e0c08c;
+    text-align: center;
+}
+.pdf-fallback a { color: var(--primary-color); text-decoration: underline; }
+.consent-agree-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 14px;
+    background: #f0f8ff;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    margin: 10px 0 6px;
+}
+.consent-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.5;
+    user-select: none;
+}
+.consent-checkbox-label input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+/* Example video screen. */
+.example-video-wrap {
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+#example-video {
+    display: block;
+    width: 100%;
+    max-height: 60vh;
+    background: #000;
+}
+
+@media (max-width: 480px) {
+    #consent-iframe { height: 360px; }
+}
+
+#dual-lang-recorder { display: flex; flex-direction: column; gap: 20px; margin-top: 20px; }
+.language-recorder-section { border: 2px solid #eaf2f8; border-radius: 12px; padding: 15px; background-color: #fcfcfc; transition: all 0.3s; }
+.lang-title { font-size: 22px; font-weight: bold; text-align: center; margin-bottom: 10px; color: #2c3e50; }
+.recorder-status { display: flex; flex-direction: column; align-items: center; text-align: center; font-size: 16px; color: #555; padding: 10px 0; }
+.recorder-status .mic-icon { font-size: 24px; display: block; margin-bottom: 5px; }
+.recorder-status .mic-icon.recording { animation: pulse 1.5s infinite; }
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.2); } 100% { transform: scale(1); } }
+.btn-record { background-color: var(--secondary-color); color: white; }
+.btn-record.recording { background-color: var(--danger-color); }
+.btn-redo { background-color: var(--warning-color); color: white; }
+.language-recorder-section .btn-record, .language-recorder-section .btn-redo { width: 100%; margin-bottom: 8px; font-size: 18px; padding: 15px; }
+.player-container { margin: 10px 0; }
+.player-container audio { width: 100%; height: 40px; }
+.navigation-controls { display: flex; justify-content: space-between; gap: 10px; margin-top: 20px; }
+.btn-finish { background-color: var(--secondary-color); color: white; }
+.btn-finish:hover:not(:disabled) { background-color: #27ae60; }
+.language-recorder-section.incomplete-task { background-color: #fffbeb; border-color: var(--warning-color); }
+.main-screen-top-bar { margin-bottom: 15px; }
+.btn-back-link { background: none; border: none; color: #7f8c8d; font-size: 16px; cursor: pointer; text-decoration: underline; padding: 0; }
+
+/* Keyboard shortcut hint styles. */
+.key-hint {
+    display: inline-block;
+    font-size: 0.8em;
+    background-color: rgba(0,0,0,0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+    font-weight: normal;
+}
+.btn:disabled .key-hint { opacity: 0.5; }

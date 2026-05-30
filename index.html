@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>語音錄製工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Step 1: user validation screen -->
+        <div id="validation-screen" class="screen active">
+            <h1>歡迎使用 TaigiSpeech 語音錄製工具</h1>
+            <p>請輸入您的全名與聯絡電話，以確認或建立您的錄音記錄。</p>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="full-name">全名 (必填)</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="例如：王大明" required tabindex="1" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="contact">聯絡電話 (必填)</label>
+                    <input type="tel" id="contact" name="contact" placeholder="手機或市話(含區碼)" required pattern="[0-9]+" tabindex="2" inputmode="numeric" autocomplete="tel-national">
+                    <small>請輸入純數字，不含空格或符號 '-'</small>
+                </div>
+                <div id="validation-error-msg" class="error"></div>
+                <button type="button" id="validate-btn" class="btn btn-primary" tabindex="3">下一步 <span class="key-hint">[按 Enter]</span></button>
+            </form>
+        </div>
+
+        <!-- Step 1.5: research participant consent form for new users only -->
+        <div id="consent-screen" class="screen">
+            <h1>研究參與者同意書</h1>
+            <p>請仔細閱讀下方同意書內容。閱讀完後，請勾選「我已仔細閱讀並同意」並按「同意並繼續」。</p>
+            <div class="consent-pdf-wrap">
+                <iframe id="consent-iframe" src="/assets/consent.pdf" title="研究參與者同意書"></iframe>
+                <p class="pdf-fallback">
+                    若上方無法顯示同意書，請<a id="consent-open-link" href="/assets/consent.pdf" target="_blank" rel="noopener">點此另開分頁閱讀</a>。
+                </p>
+            </div>
+            <div class="consent-agree-row">
+                <label class="consent-checkbox-label">
+                    <input type="checkbox" id="consent-checkbox">
+                    <span>我已仔細閱讀同意書內容，並<strong>同意</strong>參與本研究。</span>
+                </label>
+            </div>
+            <div id="consent-error-msg" class="error"></div>
+            <div class="buttons-container">
+                <button type="button" id="btn-back-consent" class="btn btn-secondary">上一頁 <span class="key-hint">[按 Esc]</span></button>
+                <button type="button" id="agree-btn" class="btn btn-primary" disabled>同意並繼續 <span class="key-hint">[按 Enter]</span></button>
+            </div>
+        </div>
+
+        <!-- Step 1.7: example video for new users only -->
+        <div id="example-video-screen" class="screen">
+            <h1>請先觀看範例影片</h1>
+            <p>下方是錄音流程的範例示範。看完後請按「繼續」進入問卷。</p>
+            <div class="example-video-wrap">
+                <video id="example-video" controls playsinline preload="metadata" src="/assets/example_video.mp4">
+                    您的瀏覽器無法播放此影片，請改用 Chrome、Edge、Firefox 或 Safari。
+                </video>
+            </div>
+            <div class="buttons-container">
+                <button type="button" id="btn-back-example" class="btn btn-secondary">上一頁 <span class="key-hint">[按 Esc]</span></button>
+                <button type="button" id="continue-from-example-btn" class="btn btn-primary">繼續填寫問卷 <span class="key-hint">[按 Enter]</span></button>
+            </div>
+        </div>
+
+        <!-- Step 2: detailed questionnaire screen -->
+        <div id="questionnaire-screen" class="screen">
+            <h1>個人基本資料</h1>
+            <p>感謝您的參與！請完成以下問卷，所有資料僅供學術研究使用。</p>
+            <form id="questionnaire-form">
+                <fieldset>
+                    <legend>基本資料</legend>
+                    <div class="form-group form-row">
+                        <div class="form-control"><label for="age">年齡</label><input type="number" id="age" name="age" min="18" max="120" required></div>
+                        <div class="form-control"><label for="gender">稱謂</label><select id="gender" name="gender" required><option value="" disabled selected>請選擇</option><option value="先生">先生</option><option value="小姐">小姐</option><option value="其他">其他</option></select></div>
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="form-control"><label for="education">教育程度</label><select id="education" name="education" required><option value="" disabled selected>請選擇</option><option value="國小">國小</option><option value="國中">國中</option><option value="高中職">高中職</option><option value="專科/大學">專科/大學</option><option value="碩士">碩士</option><option value="博士">博士</option><option value="其他">其他</option></select></div>
+                        <div class="form-control"><label for="hometown">出生地 / 主要成長地</label><input type="text" id="hometown" name="hometown" placeholder="例如：台北市" required></div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>語言背景</legend>
+                    <div class="form-group checkbox-group">
+                        <label>您的母語（可多選）</label>
+                        <div><input type="checkbox" name="nativeLanguage" value="華語"> 華語（國語/普通話）</div>
+                        <div><input type="checkbox" name="nativeLanguage" value="台語"> 台語（閩南語）</div>
+                        <div><input type="checkbox" name="nativeLanguage" value="客語"> 客語</div>
+                        <div><input type="checkbox" name="nativeLanguage" value="英語"> 英語</div>
+                        <div class="other-input"><input type="checkbox" id="native-other-checkbox" name="nativeLanguage" value="其他"> 其他：<input type="text" id="native-other-text" name="nativeLanguageOther" placeholder="請說明"></div>
+                    </div>
+                </fieldset>
+                <fieldset id="fluency-group"><legend>語言流利程度</legend></fieldset>
+                <fieldset>
+                    <legend>其他資訊 (選填)</legend>
+                    <div class="form-group"><label for="speech-health">語音健康狀況</label><textarea id="speech-health" name="speechHealth" rows="2" placeholder="例如：輕微鼻音、說話易沙啞..."></textarea></div>
+                </fieldset>
+                <div id="questionnaire-error-msg" class="error"></div>
+                
+                <!-- Back-button container -->
+                <div class="buttons-container">
+                    <button type="button" id="btn-back-questionnaire" class="btn btn-secondary">上一頁 <span class="key-hint">[按 Esc]</span></button>
+                    <button type="button" id="submit-questionnaire-btn" class="btn btn-primary">下一步 <span class="key-hint">[按 Enter]</span></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Step 3: language mode selection screen -->
+        <div id="language-selection-screen" class="screen">
+            <h1>選擇錄製語言</h1>
+            <p>部分長者反映僅會說台語，請根據您的語言能力選擇錄製模式。</p>
+            <div class="language-options">
+                <button id="mode-tw-only" class="btn btn-language-mode" tabindex="1">台語錄音 <span class="key-hint">[按 1]</span></button>
+                <button id="mode-bilingual" class="btn btn-language-mode" tabindex="2">台語錄音 + 華語錄音 <span class="key-hint">[按 2]</span></button>
+            </div>
+            <!-- Back button -->
+            <div class="buttons-container">
+                <button type="button" id="btn-back-language" class="btn btn-secondary">上一頁 <span class="key-hint">[按 Esc]</span></button>
+            </div>
+        </div>
+
+        <!-- Step 4: session length selection screen -->
+        <div id="session-selection-screen" class="screen">
+            <h1>選擇錄製時長</h1>
+            <p>感謝您的時間！請選擇您本次希望參與的錄製長度。</p>
+            <form id="session-form">
+                <div class="session-options">
+                    <!-- Options are generated dynamically. -->
+                </div>
+                <div id="session-error-msg" class="error"></div>
+                <!-- Back-button container -->
+                <div class="buttons-container">
+                    <button type="button" id="btn-back-session" class="btn btn-secondary">上一頁 <span class="key-hint">[按 Esc]</span></button>
+                    <button type="button" id="start-session-btn" class="btn btn-primary">開始錄音 <span class="key-hint">[按 Enter]</span></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Main recording screen -->
+        <div id="main-screen" class="screen">
+            <!-- Return-to-settings button -->
+            <div class="main-screen-top-bar">
+                <button type="button" id="btn-back-main" class="btn-back-link">⬅ 回到設定 <span class="key-hint">[按 Esc]</span></button>
+            </div>
+
+            <div id="progress-display"></div>
+            
+            <!-- Poster and inline playback area -->
+            <div id="video-thumbnail-container" class="video-thumbnail-container" tabindex="0">
+                <!-- Poster image -->
+                <img id="video-poster" src="" alt="情境影片預覽圖">
+                <!-- Play-button overlay -->
+                <div id="play-overlay" class="play-button-overlay">▶</div>
+                <!-- Video element, hidden by default and initialized muted -->
+                <video id="context-video" controls playsinline muted style="display: none;"></video>
+                <small id="video-hint">點擊預覽圖或 [空白鍵] 觀看情境影片</small>
+            </div>
+
+            <!-- Prompt display area -->
+            <div class="script-to-read-container">
+                <h3 id="script-instruction"></h3>
+                <!-- Scenario description in large type -->
+                <h2 id="script-description" class="script-description"></h2>
+                
+                <div class="script-display">
+                    <label>參考語句 (華語)</label>
+                    <p id="script-to-read-zh"></p>
+                </div>
+                <!-- Taigi reference sentence, collapsed until clicked or toggled with [3] -->
+                <details class="taigi-reference" id="taigi-reference">
+                    <summary class="taigi-reference-toggle" tabindex="0">
+                        <span class="taigi-reference-when-closed">▼ 點此或 [按 3] 顯示台語參考語句</span>
+                        <span class="taigi-reference-when-open">▲ 點此或 [按 3] 隱藏台語參考語句</span>
+                    </summary>
+                    <div class="script-display script-display-tw">
+                        <label>參考語句 (台語)</label>
+                        <p id="script-to-read-tw"></p>
+                    </div>
+                </details>
+            </div>
+
+            <div id="dual-lang-recorder">
+                <div id="recorder-tw" class="language-recorder-section">
+                    <div class="lang-title">台語 (閩南語)</div>
+                    <div class="recorder-status" id="status-tw"><span class="mic-icon">🎤</span><span class="status-text">點擊下方按鈕或 [按 1] 開始錄音</span></div>
+                    <div class="player-container" id="player-container-tw"></div>
+                    <!-- IDs are used by JS, and key-hint shows the shortcut. -->
+                    <button id="btn-record-tw" class="btn btn-record" data-lang="tw">錄製台語 <span class="key-hint">[按 1]</span></button>
+                    <button id="btn-redo-tw" class="btn btn-redo" data-lang="tw" style="display: none;">重錄台語 <span class="key-hint">[按 1]</span></button>
+                </div>
+                <div id="recorder-zh" class="language-recorder-section">
+                    <div class="lang-title">國語 (華語)</div>
+                    <div class="recorder-status" id="status-zh"><span class="mic-icon">🎤</span><span class="status-text">點擊下方按鈕或 [按 2] 開始錄音</span></div>
+                    <div class="player-container" id="player-container-zh"></div>
+                    <!-- IDs are used by JS, and key-hint shows the shortcut. -->
+                    <button id="btn-record-zh" class="btn btn-record" data-lang="zh">錄製國語 <span class="key-hint">[按 2]</span></button>
+                    <button id="btn-redo-zh" class="btn btn-redo" data-lang="zh" style="display: none;">重錄國語 <span class="key-hint">[按 2]</span></button>
+                </div>
+            </div>
+            <div class="navigation-controls">
+                <button id="prev-btn" class="btn">上一個 <span class="key-hint">[按 ←]</span></button>
+                <button id="next-btn" class="btn btn-primary">下一個 <span class="key-hint">[按 Enter]</span></button>
+                <button id="finish-btn" class="btn btn-finish" style="display: none;">完成本次錄音</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

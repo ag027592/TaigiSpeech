@@ -1,0 +1,1282 @@
+[
+    {
+        "index": "0001",
+        "intent": "SOS_CALL",
+        "description": "房子失火了",
+        "imagined_scenario": "面臨立即的生命威脅，如火災現場，極度恐慌/魂飛魄散",
+        "spoken_content": "救命！快來救我！幫忙啊！",
+        "taigi_content": "救人喔！緊來救我！鬥相共喔！"
+    },
+    {
+        "index": "0002",
+        "intent": "SOS_CALL",
+        "description": "家人突然倒下",
+        "imagined_scenario": "家人忽然倒地不起，心裡非常害怕，驚魂未定",
+        "spoken_content": "有沒有人啊？我先生（太太）昏倒了！",
+        "taigi_content": "緊來人喔！我翁仔昏去矣！"
+    },
+    {
+        "index": "0003",
+        "intent": "SOS_CALL",
+        "description": "有人闖進家裡",
+        "imagined_scenario": "感覺有人跟蹤，恐懼/害怕，心裡非常緊張",
+        "spoken_content": "在家裡中發現有小偷！快叫警察！",
+        "taigi_content": "有賊仔！緊叫警察！"
+    },
+    {
+        "index": "0004",
+        "intent": "SOS_CALL",
+        "description": "目擊家人嚴重受傷流血",
+        "imagined_scenario": "看到家人切菜時不慎切到動脈，血流不止，嚇得腦袋一片空白，聲音顫抖地求救。",
+        "spoken_content": "救命啊！流好多血！快叫救護車！",
+        "taigi_content": "救命啊！血流真濟！緊叫救護車！"
+    },
+    {
+        "index": "0005",
+        "intent": "SOS_CALL",
+        "description": "被重物壓住無法動彈",
+        "imagined_scenario": "地震時書櫃倒塌，整個人被壓在下面，腿部劇痛，無法脫困，感到絕望和恐懼。",
+        "spoken_content": "我被東西壓住了！快來救我！救命！",
+        "taigi_content": "我予物件硩--著矣！緊來救我！救人！"
+    },
+    {
+        "index": "0006",
+        "intent": "SOS_CALL",
+        "description": "瓦斯外洩",
+        "imagined_scenario": "聞到家中濃濃的瓦斯味，頭暈目眩，害怕會爆炸，急忙向外跑並大聲求救。",
+        "spoken_content": "家裡瓦斯漏氣了！關不起來！",
+        "taigi_content": "厝裡瓦斯 咧 漏氣！關𣍐ân！"
+    },
+    {
+        "index": "0007",
+        "intent": "SOS_CALL",
+        "description": "心臟病發作",
+        "imagined_scenario": "獨自在家時，突然感到心臟劇痛，呼吸困難，意識到可能是心臟病發，用盡最後的力氣求救。",
+        "spoken_content": "我的心臟（很痛）...快叫救護車...",
+        "taigi_content": "我的心臟足疼...緊叫救護車..."
+    },
+    {
+        "index": "0008",
+        "intent": "SOS_CALL",
+        "description": "鎖在陽台無法進入",
+        "imagined_scenario": "到陽台曬衣服，風把門吹上鎖住了，天氣炎熱，開始感到中暑和恐慌。",
+        "spoken_content": "有人啊?幫幫忙！我被鎖在外面了！",
+        "taigi_content": "有人無？鬥相共！我予人鎖佇外口矣！"
+    },
+    {
+        "index": "0009",
+        "intent": "SOS_CALL",
+        "description": "小孩誤食藥物",
+        "imagined_scenario": "發現孫子把自己的降血壓藥當成糖果吃了，臉色發白，嚇得手足無措，急忙求救。",
+        "spoken_content": "啊娘喂！快！快叫救護車！小孩吃錯藥了！",
+        "taigi_content": "啊娘喂！緊！緊叫救護車！囡仔食毋著藥仔矣！"
+    },
+    {
+        "index": "0010",
+        "intent": "SOS_CALL",
+        "description": "洗澡時觸電",
+        "imagined_scenario": "在浴室使用吹風機時，不慎掉入水中導致觸電，全身麻痺劇痛，大聲尖叫求救。",
+        "spoken_content": "啊！救命！我觸電了！",
+        "taigi_content": "啊！救命！我電著矣！"
+    },
+    {
+        "index": "0011",
+        "intent": "SOS_CALL",
+        "description": "中風前兆",
+        "imagined_scenario": "突然半邊臉部麻痺，口齒不清，手也舉不起來，意識到可能是中風，非常害怕。",
+        "spoken_content": "快...幫我...叫救護車...我好像中風了...",
+        "taigi_content": "緊...共我鬥...叫救護車...我若像中風矣..."
+    },
+    {
+        "index": "0012",
+        "intent": "SOS_CALL",
+        "description": "感覺快要失去意識",
+        "imagined_scenario": "不明原因感到天旋地轉，眼前發黑，快要昏過去了，發出最後的求救訊息。",
+        "spoken_content": "我不行了...救我...",
+        "taigi_content": "我袂堪得...救我..."
+    },
+    {
+        "index": "0013",
+        "intent": "SOS_CALL",
+        "description": "被闖入者威脅",
+        "imagined_scenario": "竊賊闖入家中被發現，對方拿出武器威脅，在極度恐懼下小聲向智慧裝置求救。",
+        "spoken_content": "報警...救命...",
+        "taigi_content": "報警察...救人..."
+    },
+    {
+        "index": "0014",
+        "intent": "SOS_CALL",
+        "description": "嚴重過敏反應",
+        "imagined_scenario": "吃了海鮮後，突然全身起疹子，喉嚨腫脹，呼吸越來越困難，知道是嚴重的過敏反應。",
+        "spoken_content": "救護車...我過敏...快不能呼吸了...",
+        "taigi_content": "救護車...我過敏...強欲袂喘氣矣..."
+    },
+    {
+        "index": "0015",
+        "intent": "SOS_CALL",
+        "description": "通用緊急呼叫",
+        "imagined_scenario": "發生了無法言喻的緊急狀況，極度慌亂，只能發出最直接的求救指令。",
+        "spoken_content": "來人啊！救命！",
+        "taigi_content": "有人無？救命！"
+    },
+    {
+        "index": "0016",
+        "intent": "SOS_CALL",
+        "description": "被反鎖在儲藏室",
+        "imagined_scenario": "進入儲藏室找東西，門意外被鎖上，裡面沒有對外窗，空間狹小，開始感到幽閉恐懼。",
+        "spoken_content": "幫我求救！我被關起來了！",
+        "taigi_content": "共我鬥叫人！我予人關起來矣！"
+    },
+    {
+        "index": "0017",
+        "intent": "SOS_CALL",
+        "description": "目睹窗外有嚴重車禍",
+        "imagined_scenario": "從家裡窗戶看到樓下發生嚴重車禍，有人受困車內，急著想幫忙報案。",
+        "spoken_content": "樓下出車禍了！快幫我報警叫救護車！",
+        "taigi_content": "樓跤挵車矣！緊共我鬥報警察叫救護車！"
+    },
+    {
+        "index": "0018",
+        "intent": "SOS_CALL",
+        "description": "熱水器故障一氧化碳中毒",
+        "imagined_scenario": "洗澡時，開始感到頭暈、噁心、四肢無力，意識到可能是熱水器問題導致中毒。",
+        "spoken_content": "救命...我好像中毒了...頭好暈...",
+        "taigi_content": "救命...我親像中毒矣...頭足眩(hîn)..."
+    },
+    {
+        "index": "0019",
+        "intent": "SOS_CALL",
+        "description": "血糖過低昏迷",
+        "imagined_scenario": "糖尿病患者因血糖過低，全身冒冷汗，意識模糊，即將陷入昏迷前的求救。",
+        "spoken_content": "快幫我...叫救護車...我不行了...",
+        "taigi_content": "緊共我鬥...叫救護車...我袂堪得矣..."
+    },
+    {
+        "index": "0020",
+        "intent": "SOS_CALL",
+        "description": "家中淹水且有漏電危險",
+        "imagined_scenario": "暴雨導致家中嚴重淹水，水淹及插座，看到電器冒出火花，害怕觸電，驚慌求救。",
+        "spoken_content": "淹水了！快斷電！救命啊！",
+        "taigi_content": "淹水矣！緊共電切掉！救人喔！"
+    },
+    {
+        "index": "0021",
+        "intent": "FALL_HELP",
+        "description": "在浴室滑倒",
+        "imagined_scenario": "剛洗完澡，地滑不慎摔倒，撞到頭部，感到暈眩且無力起身。",
+        "spoken_content": "哎唷！我滑倒了，爬不起來。",
+        "taigi_content": "哎唷！我跋倒矣，爬袂起來。"
+    },
+    {
+        "index": "0022",
+        "intent": "FALL_HELP",
+        "description": "從床上摔下來",
+        "imagined_scenario": "半夜睡覺翻身，不小心從床上滾下來，腰部劇痛，動彈不得。",
+        "spoken_content": "啊...好痛...我從床上掉下來了。",
+        "taigi_content": "啊...足痛...我對眠床頂跋落來。"
+    },
+    {
+        "index": "0023",
+        "intent": "FALL_HELP",
+        "description": "下樓梯時踩空",
+        "imagined_scenario": "下樓梯時沒踩穩，滾了下去，腳踝可能扭傷或骨折，痛得無法站立。",
+        "spoken_content": "我摔倒了...腳好痛...快來扶我一下。",
+        "taigi_content": "我跋倒矣...跤足痛...緊來共我扞一下"
+    },
+    {
+        "index": "0024",
+        "intent": "FALL_HELP",
+        "description": "起身時頭暈而跌倒",
+        "imagined_scenario": "從沙發上站起來太快，一陣頭暈目眩，眼前發黑，接著就摔倒在地。",
+        "spoken_content": "我頭暈...然後就跌倒了...現在起不來。",
+        "taigi_content": "我頭殼眩甲跋倒矣...這馬爬袂起來。"
+    },
+    {
+        "index": "0025",
+        "intent": "FALL_HELP",
+        "description": "又被地上的電線絆倒",
+        "imagined_scenario": "走路沒注意到地上的延長線，被絆倒後臉部朝下撲倒，感到羞愧和疼痛。",
+        "spoken_content": "唉...又跌倒了啦...來人幫我一下。",
+        "taigi_content": "唉...閣跋倒矣啦...啥人來共我我鬥相共一下。"
+    },
+    {
+        "index": "0026",
+        "intent": "FALL_HELP",
+        "description": "取高處物品時從椅子上摔落",
+        "imagined_scenario": "踩在椅子上想拿櫃子頂端東西，結果椅子不穩，整個人摔下來，背部著地。",
+        "spoken_content": "我摔下來了...動不了...",
+        "taigi_content": "我跋落來...袂振動矣..."
+    },
+    {
+        "index": "0027",
+        "intent": "FALL_HELP",
+        "description": "腿軟無力而跌坐",
+        "imagined_scenario": "走路走到一半，突然感覺雙腿發軟，無力支撐身體而跌坐在地上，感到驚慌和無助。",
+        "spoken_content": "我腳沒力，跌倒了。",
+        "taigi_content": "我軟跤，跋倒矣。"
+    },
+    {
+        "index": "0028",
+        "intent": "FALL_HELP",
+        "description": "簡單直接的求助",
+        "imagined_scenario": "跌倒後，不想多做解釋，只想趕快有人來幫忙，語氣急促。",
+        "spoken_content": "我跌倒了，需要幫忙！",
+        "taigi_content": "我跋倒矣，需要人鬥相共！"
+    },
+    {
+        "index": "0029",
+        "intent": "FALL_HELP",
+        "description": "跌倒後頭撞到家具",
+        "imagined_scenario": "在客廳跌倒，頭撞到桌角，感到劇痛和暈眩，害怕有腦震盪。",
+        "spoken_content": "我跌倒撞到頭...好痛...爬不起來...",
+        "taigi_content": "我跋倒去挵著頭...足痛...peh袂起來..."
+    },
+    {
+        "index": "0030",
+        "intent": "FALL_HELP",
+        "description": "因地面濕滑跌倒",
+        "imagined_scenario": "剛拖完地，忘記地板還很濕，一轉身就滑倒，摔得四腳朝天。",
+        "spoken_content": "地上太滑了...我摔了一跤。",
+        "taigi_content": "塗跤傷滑...我跋一倒。"
+    },
+    {
+        "index": "0031",
+        "intent": "FALL_HELP",
+        "description": "在陽台整理植物時跌倒",
+        "imagined_scenario": "在陽台裡蹲著拔草，站起來時一陣暈眩跌倒，旁邊沒人可以幫忙。",
+        "spoken_content": "我在陽台裡跌倒了，快來幫我。",
+        "taigi_content": "我佇露台跋倒矣，緊來共我鬥相共。"
+    },
+    {
+        "index": "0032",
+        "intent": "FALL_HELP",
+        "description": "抱著重物時跌倒",
+        "imagined_scenario": "搬一箱書，因為太重看不見路，結果被門檻絆倒，書灑了一地，自己也起不來。",
+        "spoken_content": "唉唷喂呀...我搬東西跌倒了...",
+        "taigi_content": "唉唷喂...我搬物件跋倒矣..."
+    },
+    {
+        "index": "0033",
+        "intent": "FALL_HELP",
+        "description": "穿新鞋不合腳而跌倒",
+        "imagined_scenario": "穿著一雙不合腳的新鞋，走路時拐了一下，整個人失去平衡摔倒在地。",
+        "spoken_content": "跌倒了...快來扶我。",
+        "taigi_content": "跋倒矣...緊來共我牽。"
+    },
+    {
+        "index": "0034",
+        "intent": "FALL_HELP",
+        "description": "寵物狗衝撞導致跌倒",
+        "imagined_scenario": "家裡的狗突然興奮地衝過來，撞到我的腳，害我摔了一大跤。",
+        "spoken_content": "我被我們家的狗撞倒了，爬不起來。",
+        "taigi_content": "我予阮兜的狗仔挵倒矣，爬袂起來。"
+    },
+    {
+        "index": "0035",
+        "intent": "FALL_HELP",
+        "description": "因藥物副作用而跌倒",
+        "imagined_scenario": "剛吃了感冒藥，覺得昏昏沉沉，走路不穩，結果就跌倒了。",
+        "spoken_content": "我好像吃了藥頭暈，摔倒了。",
+        "taigi_content": "我敢若食藥仔頭眩，跋倒矣。"
+    },
+    {
+        "index": "0036",
+        "intent": "FALL_HELP",
+        "description": "跌倒且疑似骨折",
+        "imagined_scenario": "跌倒後，手臂傳來一陣劇痛，看起來有點變形，懷疑是骨折了，非常害怕。",
+        "spoken_content": "我摔倒了...手好像斷了...好痛啊！",
+        "taigi_content": "我跋倒矣...手敢若斷去...足痛--ê！"
+    },
+    {
+        "index": "0037",
+        "intent": "FALL_HELP",
+        "description": "黑暗中跌倒",
+        "imagined_scenario": "半夜起床上廁所沒開燈，被地上的東西絆倒，在黑暗中感到無助和疼痛。",
+        "spoken_content": "太暗了...我跌倒了...",
+        "taigi_content": "傷暗矣...我跋倒矣..."
+    },
+    {
+        "index": "0038",
+        "intent": "FALL_HELP",
+        "description": "無力的求助",
+        "imagined_scenario": "年邁體衰，跌倒後完全沒有力氣自己起來，只能虛弱地發出求救。",
+        "spoken_content": "有人嗎？...扶我起來...",
+        "taigi_content": "有人無？...共我鬥牽起來..."
+    },
+    {
+        "index": "0039",
+        "intent": "FALL_HELP",
+        "description": "在廚房被油漬滑倒",
+        "imagined_scenario": "廚房地上有油漬沒清乾淨，踩到後滑倒，撞到流理台，腰很痛。",
+        "spoken_content": "啊...我跌倒了...腰好痛...起不來。",
+        "taigi_content": "啊...我跋倒矣...腰足痛...peh袂起來。"
+    },
+    {
+        "index": "0040",
+        "intent": "FALL_HELP",
+        "description": "嘗試起身失敗",
+        "imagined_scenario": "跌倒後，試了好幾次都爬不起來，感到非常沮喪和疲累，只好放棄並求助。",
+        "spoken_content": "不行...我真的爬不起來...誰來幫幫我。",
+        "taigi_content": "袂使...我真正爬袂起來...啥人來共我鬥相共。"
+    },
+    {
+        "index": "0041",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "胸口劇痛，疑似心肌梗塞",
+        "imagined_scenario": "看電視時，胸口突然像被大石壓住，劇痛延伸到左臂，呼吸困難，極度恐慌。",
+        "spoken_content": "我的胸口好痛...吸不到氣...",
+        "taigi_content": "我胸坎足痛...袂喘氣..."
+    },
+    {
+        "index": "0042",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "氣喘嚴重發作",
+        "imagined_scenario": "氣喘突然發作，吸入器剛好用完，感覺氣管越來越緊縮，快要窒息，非常害怕。",
+        "spoken_content": "我氣喘...發作了...快不能呼吸了...",
+        "taigi_content": "我痚呴(he-ku)...發作矣...強欲袂喘氣矣..."
+    },
+    {
+        "index": "0043",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "吃東西噎到",
+        "imagined_scenario": "吃麻糬時不小心噎到，氣管完全堵住，哽咽無法說話也無法呼吸，臉色發紫，用盡全力發出氣音。",
+        "spoken_content": "救...我...噎到了...",
+        "taigi_content": "共...我...救... 去哽著..."
+    },
+    {
+        "index": "0044",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "不明原因呼吸急促",
+        "imagined_scenario": "沒有任何預兆，突然感到呼吸非常急促，不管怎麼深呼吸都吸不飽氣，心跳加速。",
+        "spoken_content": "我好喘...不知道為什麼...呼吸好困難。",
+        "taigi_content": "我足喘...毋知按怎...足歹喘氣。"
+    },
+    {
+        "index": "0045",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "胸口悶痛且頭暈",
+        "imagined_scenario": "感覺胸口非常悶，像是被東西堵住，伴隨著頭暈和噁心，害怕是心臟出問題。",
+        "spoken_content": "胸口好悶...頭也好暈...",
+        "taigi_content": "胸坎實實(cha̍t-cha̍t)...頭也足眩(hîn)..."
+    },
+    {
+        "index": "0046",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "睡覺時呼吸中止",
+        "imagined_scenario": "在睡夢中突然因為無法呼吸而驚醒，心臟狂跳，感覺快要窒息。",
+        "spoken_content": "我...睡到一半...突然不能呼吸！",
+        "taigi_content": "我...睏甲一半...雄雄袂喘氣！"
+    },
+    {
+        "index": "0047",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "感覺心臟跳得異常",
+        "imagined_scenario": "感覺心臟亂跳，非常不規律，同時伴隨著胸悶和呼吸不順，非常擔心。",
+        "spoken_content": "我心悸得好厲害...呼吸不過來...",
+        "taigi_content": "我心臟烏白咇噗跳...氣喘袂過..."
+    },
+    {
+        "index": "0048",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "喉嚨腫脹導致呼吸困難",
+        "imagined_scenario": "嚴重的過敏反應導致喉嚨內部腫起來，氣道變窄，呼吸聲越來越大，非常痛苦。",
+        "spoken_content": "我的喉嚨...腫起來了...吸不到氣...",
+        "taigi_content": "我ê嚨喉...腫起來矣...袂喘氣..."
+    },
+    {
+        "index": "0049",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "吸入刺激性氣體",
+        "imagined_scenario": "打掃時不慎混合了兩種清潔劑，產生刺鼻氣體，吸入後劇烈咳嗽，肺部灼痛，無法呼吸。",
+        "spoken_content": "咳咳咳...我吸到毒氣...不能呼吸了...",
+        "taigi_content": "(嗽)...我吸著毒氣...袂喘氣矣..."
+    },
+    {
+        "index": "0050",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "被濃煙嗆到",
+        "imagined_scenario": "廚房油鍋起火，被濃煙嗆到，喉嚨和胸口劇痛，不停咳嗽，呼吸困難。",
+        "spoken_content": "都是煙...我沒辦法呼吸了...",
+        "taigi_content": "攏是煙...我無法度喘氣矣..."
+    },
+    {
+        "index": "0051",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "說話上氣不接下氣",
+        "imagined_scenario": "只是走幾步路就喘到不行，連一句完整的話都說不出來，感到非常虛弱和害怕。",
+        "spoken_content": "我...好喘...連講話...都沒辦法...",
+        "taigi_content": "我...足喘...連講話...都無法度..."
+    },
+    {
+        "index": "0052",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "胸部劇痛",
+        "imagined_scenario": "深呼吸時，胸部像被針刺一樣劇痛，只能用短淺的方式呼吸，非常難受。",
+        "spoken_content": "我的胸好痛...一吸氣就痛...",
+        "taigi_content": "我的胸足痛...一欶(suh)氣就痛..."
+    },
+    {
+        "index": "0053",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "胸痛伴隨冒冷汗",
+        "imagined_scenario": "胸口持續悶痛，而且全身冒冷汗，四肢冰冷，感覺情況非常不妙。",
+        "spoken_content": "我胸口痛，還一直流冷汗。",
+        "taigi_content": "我胸坎痛，閣直直流凊汗。"
+    },
+    {
+        "index": "0054",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "請求緊急醫療協助",
+        "imagined_scenario": "清楚地知道自己需要立即的醫療救助，但難以詳細描述症狀，直接請求幫助。",
+        "spoken_content": "我呼吸困難，叫醫生！",
+        "taigi_content": "我喘氣喘袂過，叫醫生！"
+    },
+    {
+        "index": "0055",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "背部疼痛延伸至胸口",
+        "imagined_scenario": "一開始是上背部疼痛，後來痛感延伸到前胸，並且感到呼吸困難，非常奇怪且嚇人。",
+        "spoken_content": "我背痛到胸口...現在很喘...",
+        "taigi_content": "我ùi尻脊骿(kha-chiah-phiaⁿ)痛甲胸坎...這馬足喘.."
+    },
+    {
+        "index": "0056",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "恐慌症發作",
+        "imagined_scenario": "突然感到沒來由的恐懼，心跳加速、呼吸急促、手腳發麻，感覺自己快要死掉或失控。",
+        "spoken_content": "我好害怕...心跳好快...我快不能呼吸了！",
+        "taigi_content": "我足驚...心跳足緊...我強欲袂喘氣矣！"
+    },
+    {
+        "index": "0057",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "喝水嗆到",
+        "imagined_scenario": "喝水喝得太急，嚴重嗆到氣管裡，引發劇烈咳嗽，咳到快喘不過氣。",
+        "spoken_content": "咳...咳咳咳...我嗆到了...好難過...",
+        "taigi_content": "Khèⁿ..khèⁿ khèⁿ khèⁿ...我去嗾(cha̍k)著...足艱苦..."
+    },
+    {
+        "index": "0058",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "胸口有壓迫感",
+        "imagined_scenario": "胸口感覺被緊緊地箍住，越來越緊，連帶影響到呼吸的順暢度。",
+        "spoken_content": "我的胸口...有東西壓著...好難呼吸...",
+        "taigi_content": "我的胸坎...有物件硩咧...足歹喘氣..."
+    },
+    {
+        "index": "0059",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "心臟刺痛",
+        "imagined_scenario": "心臟位置突然傳來一陣陣的刺痛，雖然可以呼吸，但非常害怕。",
+        "spoken_content": "我心臟這邊...刺刺的痛...",
+        "taigi_content": "我心臟這爿...會痛...若像針咧揻(ui)..."
+    },
+    {
+        "index": "0060",
+        "intent": "BREATHING_CHEST_EMERG",
+        "description": "簡單直接的描述",
+        "imagined_scenario": "因為呼吸困難而無法說長句，只能用最簡單的詞彙表達自己的狀況。",
+        "spoken_content": "呼吸...困難...胸口...痛...",
+        "taigi_content": "僫...喘氣....胸坎...痛..."
+    },
+    {
+        "index": "0061",
+        "intent": "PAIN_GENERAL",
+        "description": "劇烈頭痛",
+        "imagined_scenario": "頭突然像要裂開一樣痛，伴隨著噁心感，痛到無法思考，只能抱著頭呻吟。",
+        "spoken_content": "我的頭好痛...痛到要爆炸了...",
+        "taigi_content": "我ê頭足痛...痛甲kan-taⁿ欲煏開矣..."
+    },
+    {
+        "index": "0062",
+        "intent": "PAIN_GENERAL",
+        "description": "腹部絞痛",
+        "imagined_scenario": "肚子突然像被刀割一樣絞痛，痛到在床上打滾，全身冒冷汗。",
+        "spoken_content": "肚子好痛...我肚子好痛...",
+        "taigi_content": "腹肚足痛...我腹肚足痛..."
+    },
+    {
+        "index": "0063",
+        "intent": "PAIN_GENERAL",
+        "description": "牙痛難忍",
+        "imagined_scenario": "牙齒的抽痛延伸到整個半邊臉，痛到無法入睡也無法進食，感覺非常焦躁。",
+        "spoken_content": "我的牙齒好痛...痛到受不了了！",
+        "taigi_content": "我的喙齒足痛...痛甲擋袂牢！"
+    },
+    {
+        "index": "0064",
+        "intent": "PAIN_GENERAL",
+        "description": "腰部劇痛",
+        "imagined_scenario": "只是彎腰撿個東西，腰突然像閃到一樣劇痛，完全無法直起來，動一下就痛。",
+        "spoken_content": "我的腰...好痛...我動不了了。",
+        "taigi_content": "我的腰...足痛...我袂振動矣。"
+    },
+    {
+        "index": "0065",
+        "intent": "PAIN_GENERAL",
+        "description": "關節疼痛",
+        "imagined_scenario": "膝關節突然腫起來並且劇痛，可能是痛風發作，連走路都有困難。",
+        "spoken_content": "我的腳...關節好痛...不能走路了。",
+        "taigi_content": "我ê跤...骨輪足痛...行袂振動矣。"
+    },
+    {
+        "index": "0066",
+        "intent": "PAIN_GENERAL",
+        "description": "不明原因的全身疼痛",
+        "imagined_scenario": "感覺全身的肌肉和骨頭都在痛，非常虛弱，連翻身都覺得痛苦。",
+        "spoken_content": "我全身都好痛...不知道是怎麼了...",
+        "taigi_content": "我規身軀攏足痛...毋知是按怎..."
+    },
+    {
+        "index": "0067",
+        "intent": "PAIN_GENERAL",
+        "description": "眼睛劇痛",
+        "imagined_scenario": "眼睛突然感到劇痛，像被針刺一樣，視線模糊，還不停地流眼淚。",
+        "spoken_content": "我的眼睛好痛！快幫我！",
+        "taigi_content": "我的目睭足痛！緊共我鬥相共！"
+    },
+    {
+        "index": "0068",
+        "intent": "PAIN_GENERAL",
+        "description": "燒燙傷的疼痛",
+        "imagined_scenario": "被剛燒開的熱水燙到手臂，皮膚立刻紅腫起水泡，灼熱的刺痛感讓人難以忍受。",
+        "spoken_content": "啊！好燙！好痛啊！",
+        "taigi_content": "啊！足燒！足痛啊！"
+    },
+    {
+        "index": "0069",
+        "intent": "PAIN_GENERAL",
+        "description": "耳朵劇痛",
+        "imagined_scenario": "耳朵裡面突然劇痛，像是中耳炎發作，痛到影響聽力，還感到暈眩。",
+        "spoken_content": "耳朵好痛...痛到聽不到了...",
+        "taigi_content": "耳仔足痛...痛甲聽袂清矣..."
+    },
+    {
+        "index": "0070",
+        "intent": "PAIN_GENERAL",
+        "description": "術後傷口疼痛",
+        "imagined_scenario": "剛動完手術回家，麻藥退了之後傷口開始劇烈疼痛，止痛藥也沒用。",
+        "spoken_content": "我的傷口好痛...止痛藥沒效...",
+        "taigi_content": "我的空喙足痛...止痛藥仔無效..."
+    },
+    {
+        "index": "0071",
+        "intent": "PAIN_GENERAL",
+        "description": "疑似腎結石",
+        "imagined_scenario": "後腰部突然傳來劇烈的絞痛，並且延伸到腹部，痛到想吐，懷疑是腎結石。",
+        "spoken_content": "我的腰好痛...痛到想吐...",
+        "taigi_content": "我的腰足痛...痛甲想欲吐..."
+    },
+    {
+        "index": "0072",
+        "intent": "PAIN_GENERAL",
+        "description": "被昆蟲叮咬後劇痛",
+        "imagined_scenario": "被不明的昆蟲叮咬後，傷口快速紅腫，並且傳來異常劇烈的疼痛。",
+        "spoken_content": "我被蟲咬了...好痛好腫...",
+        "taigi_content": "我予蟲咬著...足痛足腫..."
+    },
+    {
+        "index": "0073",
+        "intent": "PAIN_GENERAL",
+        "description": "痛到無法說話",
+        "imagined_scenario": "疼痛的程度已經超過可以言語形容的範圍，只能發出呻吟聲和簡單的詞彙。",
+        "spoken_content": "痛...好痛...",
+        "taigi_content": "痛...足痛..."
+    },
+    {
+        "index": "0074",
+        "intent": "PAIN_GENERAL",
+        "description": "帶狀皰疹（皮蛇）的疼痛",
+        "imagined_scenario": "胸口的皮膚上長了一片水泡，神經抽痛，連衣服碰到都痛得要命。",
+        "spoken_content": "我身上長東西，好痛...像被電到一樣。",
+        "taigi_content": "我身軀頂生毋知啥物物件，足痛...親像予電電著。"
+    },
+    {
+        "index": "0075",
+        "intent": "PAIN_GENERAL",
+        "description": "腿部抽筋",
+        "imagined_scenario": "半夜睡覺小腿突然嚴重抽筋，肌肉整個糾結在一起，痛到從床上跳起來。",
+        "spoken_content": "啊！抽筋了！我的腳好痛！",
+        "taigi_content": "啊！糾筋矣！我ê跤足痛！"
+    },
+    {
+        "index": "0076",
+        "intent": "PAIN_GENERAL",
+        "description": "胃痛",
+        "imagined_scenario": "胃部持續的灼痛和痙攣，吃了胃藥也沒改善，痛到無法坐直。",
+        "spoken_content": "我的胃好痛...好像火燒心...",
+        "taigi_content": "我的胃足痛...親像火燒心..."
+    },
+    {
+        "index": "0077",
+        "intent": "PAIN_GENERAL",
+        "description": "受傷後的疼痛",
+        "imagined_scenario": "撞到桌角，小腿的骨頭非常痛，懷疑是否有裂開，痛到冒冷汗。",
+        "spoken_content": "我的腳好痛...撞到了...",
+        "taigi_content": "我的跤足痛...去挵著..."
+    },
+    {
+        "index": "0078",
+        "intent": "PAIN_GENERAL",
+        "description": "喉嚨劇痛",
+        "imagined_scenario": "嚴重的喉嚨發炎，痛到連吞口水都像在吞刀片，無法進食也無法說話。",
+        "spoken_content": "喉嚨...好痛...不能吞東西...",
+        "taigi_content": "嚨喉...足痛...物件吞袂loeh..."
+    },
+    {
+        "index": "0079",
+        "intent": "PAIN_GENERAL",
+        "description": "請求止痛",
+        "imagined_scenario": "被疼痛折磨到失去耐心，直接請求協助以停止疼痛。",
+        "spoken_content": "我需要止痛！快幫我想辦法！",
+        "taigi_content": "我需要止痛！緊共我鬥想辦法！"
+    },
+    {
+        "index": "0080",
+        "intent": "PAIN_GENERAL",
+        "description": "女性經痛",
+        "imagined_scenario": "嚴重的經痛導致下腹部和後腰部劇痛，伴隨噁心和無力感，無法正常活動。",
+        "spoken_content": "我肚子好痛...那個來了...痛到受不了...",
+        "taigi_content": "我腹肚足痛...來洗來矣...痛甲擋袂牢...."
+    },
+    {
+        "index": "0081",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡兒子",
+        "imagined_scenario": "覺得身體有點不舒服，想打電話給兒子，讓他下班後順道過來看看。",
+        "spoken_content": "幫我打電話給我兒子。",
+        "taigi_content": "共我鬥敲電話予我後生。"
+    },
+    {
+        "index": "0082",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡女兒",
+        "imagined_scenario": "有件開心的事情想跟女兒分享，語氣輕鬆愉快。",
+        "spoken_content": "打電話給我女兒。",
+        "taigi_content": "敲電話予阮查某囝。"
+    },
+    {
+        "index": "0083",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡指定的聯絡人",
+        "imagined_scenario": "需要聯絡某個特定的人，直接說出對方的名字或稱謂。",
+        "spoken_content": "打給王醫師。",
+        "taigi_content": "敲予王醫師。"
+    },
+    {
+        "index": "0084",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡緊急聯絡人",
+        "imagined_scenario": "發生了比較緊急但不至於叫救護車的狀況，例如在家裡跌倒但還能動，需要家人協助。",
+        "spoken_content": "幫我打給緊急聯絡人。",
+        "taigi_content": "鬥我敲予緊急聯絡人。"
+    },
+    {
+        "index": "0085",
+        "intent": "CALL_CONTACT",
+        "description": "詢問事情打給家人",
+        "imagined_scenario": "想不起來瓦斯關了沒，有點焦慮，想打電話給剛出門的太太確認一下。",
+        "spoken_content": "打給我老婆（老公）。",
+        "taigi_content": "敲予我某（翁）。"
+    },
+    {
+        "index": "0086",
+        "intent": "CALL_CONTACT",
+        "description": "請家人買東西",
+        "imagined_scenario": "發現家裡醬油用完了，晚餐需要用到，打電話給快下班的兒子請他順路買回來。",
+        "spoken_content": "聯絡我兒子，叫他下班記得買醬油。",
+        "taigi_content": "聯絡我後生，叫伊落班會記得買豆油。"
+    },
+    {
+        "index": "0087",
+        "intent": "CALL_CONTACT",
+        "description": "感到孤單想聊天",
+        "imagined_scenario": "一個人看著電視覺得很無聊，想打電話給孫女聊聊天。",
+        "spoken_content": "打給我的孫女。",
+        "taigi_content": "敲予我的孫仔。"
+    },
+    {
+        "index": "0088",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡鄰居",
+        "imagined_scenario": "家裡突然停電了，想打電話問問隔壁鄰居是不是也一樣狀況。",
+        "spoken_content": "幫我打給隔壁的鄰居。",
+        "taigi_content": "鬥我敲予隔壁的厝邊。"
+    },
+    {
+        "index": "0089",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡家庭醫生",
+        "imagined_scenario": "舊疾有點復發的跡象，想先打電話問問家庭醫生的意見。",
+        "spoken_content": "我要找我的醫生，幫我打電話。",
+        "taigi_content": "我欲揣我的醫生，鬥我敲電話。"
+    },
+    {
+        "index": "0090",
+        "intent": "CALL_CONTACT",
+        "description": "報平安",
+        "imagined_scenario": "剛動完一個小手術回到家，想打電話跟孩子們說一聲，讓他們安心。",
+        "spoken_content": "打給我大兒子，跟他說我到家了。",
+        "taigi_content": "敲予我大漢後生，佮伊講我到厝矣。"
+    },
+    {
+        "index": "0091",
+        "intent": "CALL_CONTACT",
+        "description": "提醒家人事情",
+        "imagined_scenario": "突然想到明天要回診，怕先生忘記，想打電話提醒他。",
+        "spoken_content": "聯絡我先生（老婆）。",
+        "taigi_content": "聯絡我翁仔（某）。"
+    },
+    {
+        "index": "0092",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡看護",
+        "imagined_scenario": "感覺身體不太對勁，想請看護提早一點過來幫忙。",
+        "spoken_content": "幫我打給看護阿姨。",
+        "taigi_content": "鬥我敲予看護阿姨。"
+    },
+    {
+        "index": "0093",
+        "intent": "CALL_CONTACT",
+        "description": "使用暱稱聯絡",
+        "imagined_scenario": "想聯絡自己的太太，習慣用親密的暱稱稱呼。",
+        "spoken_content": "打電話給親愛的。",
+        "taigi_content": "敲電話予心愛的。"
+    },
+    {
+        "index": "0094",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡朋友",
+        "imagined_scenario": "跟朋友約好要出門，想打電話確認一下時間。",
+        "spoken_content": "我要打給老李。",
+        "taigi_content": "我欲敲予老李。"
+    },
+    {
+        "index": "0095",
+        "intent": "CALL_CONTACT",
+        "description": "詢問藥物問題",
+        "imagined_scenario": "不確定藥該飯前還是飯後吃，想打電話給女兒問一下，因為藥袋是她整理的。",
+        "spoken_content": "打電話給女兒，問她藥怎麼吃。",
+        "taigi_content": "敲電話予查某囝，問伊藥仔按怎食。"
+    },
+    {
+        "index": "0096",
+        "intent": "CALL_CONTACT",
+        "description": "找不到東西請家人協助",
+        "imagined_scenario": "找不到健保卡，記得是兒子收的，想打電話問他放哪裡了。",
+        "spoken_content": "幫我打給我兒子。",
+        "taigi_content": "鬥我接我後生。"
+    },
+    {
+        "index": "0097",
+        "intent": "CALL_CONTACT",
+        "description": "分享電視節目內容",
+        "imagined_scenario": "看到電視正在播以前很喜歡的老歌，興奮地想打電話給也喜歡這首歌的妹妹。",
+        "spoken_content": "快！打電話給我妹妹！",
+        "taigi_content": "緊！敲電話予我小妹！"
+    },
+    {
+        "index": "0098",
+        "intent": "CALL_CONTACT",
+        "description": "需要幫忙操作電器",
+        "imagined_scenario": "新買的電視不會用，想打電話問孫子怎麼操作。",
+        "spoken_content": "打給我的乖孫。",
+        "taigi_content": "敲予我的乖孫。"
+    },
+    {
+        "index": "0099",
+        "intent": "CALL_CONTACT",
+        "description": "討論晚餐菜色",
+        "imagined_scenario": "準備煮晚餐，想打電話問先生想吃什麼。",
+        "spoken_content": "幫我聯絡一下我老公。",
+        "taigi_content": "鬥我聯絡一下我翁。"
+    },
+    {
+        "index": "0100",
+        "intent": "CALL_CONTACT",
+        "description": "聯絡名字",
+        "imagined_scenario": "聯絡在國外工作的兒子/女兒，習慣叫他的名字(傑森)。",
+        "spoken_content": "打給 傑森",
+        "taigi_content": "打給 傑森"
+    },
+    {
+        "index": "0101",
+        "intent": "LIGHT_ON",
+        "description": "半夜聽到怪聲",
+        "imagined_scenario": "睡夢中被客廳傳來的不明聲響驚醒，心生恐懼，想開燈確認狀況。",
+        "spoken_content": "開燈！快點把燈打開！",
+        "taigi_content": "開燈！緊共電火開開！"
+    },
+    {
+        "index": "0102",
+        "intent": "LIGHT_ON",
+        "description": "起床時房間太暗",
+        "imagined_scenario": "天還沒亮就醒了，房間一片漆黑，想開燈去上廁所。",
+        "spoken_content": "把燈打開。",
+        "taigi_content": "共電火開開。"
+    },
+    {
+        "index": "0103",
+        "intent": "LIGHT_ON",
+        "description": "找不到東西",
+        "imagined_scenario": "在昏暗的房間裡找不到眼鏡，有點著急，需要光線。",
+        "spoken_content": "開燈，我找不到東西。",
+        "taigi_content": "開燈，我揣無物件。"
+    },
+    {
+        "index": "0104",
+        "intent": "LIGHT_ON",
+        "description": "簡單指令",
+        "imagined_scenario": "走進一個黑暗的房間，直接下達開燈指令。",
+        "spoken_content": "開燈。",
+        "taigi_content": "開燈。"
+    },
+    {
+        "index": "0105",
+        "intent": "LIGHT_ON",
+        "description": "指定區域開燈",
+        "imagined_scenario": "人還在臥室，但想打開客廳的燈，準備要出去。",
+        "spoken_content": "打開客廳的燈。",
+        "taigi_content": "開客廳的電火。"
+    },
+    {
+        "index": "0106",
+        "intent": "LIGHT_ON",
+        "description": "感覺到有人",
+        "imagined_scenario": "感覺窗外有人影閃過，非常害怕，急促地要求開燈。",
+        "spoken_content": "快開燈！",
+        "taigi_content": "緊開燈！"
+    },
+    {
+        "index": "0107",
+        "intent": "LIGHT_ON",
+        "description": "需要光線閱讀",
+        "imagined_scenario": "想在床上看書，但室內光線不足，覺得眼睛吃力。",
+        "spoken_content": "請幫我開燈，謝謝。",
+        "taigi_content": "請鬥我開燈，多謝。"
+    },
+    {
+        "index": "0108",
+        "intent": "LIGHT_ON",
+        "description": "害怕黑暗",
+        "imagined_scenario": "看完恐怖片，疑神疑鬼，不敢在黑暗中待著。",
+        "spoken_content": "我怕黑，把燈打開。",
+        "taigi_content": "我驚暗，共電火開開。"
+    },
+    {
+        "index": "0109",
+        "intent": "LIGHT_ON",
+        "description": "回家時的指令",
+        "imagined_scenario": "一打開家門，屋內一片漆黑，習慣性地發出指令。",
+        "spoken_content": "我回來了，開燈。",
+        "taigi_content": "我轉來矣，開燈。"
+    },
+    {
+        "index": "0110",
+        "intent": "LIGHT_ON",
+        "description": "禮貌的請求",
+        "imagined_scenario": "需要光線，但用比較客氣的語氣提出要求。",
+        "spoken_content": "麻煩幫我開一下燈。",
+        "taigi_content": "勞煩鬥我開一下電火。"
+    },
+    {
+        "index": "0111",
+        "intent": "LIGHT_ON",
+        "description": "指定特定燈具",
+        "imagined_scenario": "不想開主燈，只需要床頭的小燈。",
+        "spoken_content": "開床頭燈。",
+        "taigi_content": "開床頭燈。"
+    },
+    {
+        "index": "0112",
+        "intent": "LIGHT_ON",
+        "description": "表達需要光",
+        "imagined_scenario": "在黑暗的環境中，直接表達對光線的需求。",
+        "spoken_content": "我需要光線。",
+        "taigi_content": "我需要光線。"
+    },
+    {
+        "index": "0113",
+        "intent": "LIGHT_ON",
+        "description": "抱怨太暗",
+        "imagined_scenario": "覺得房間太暗，看不清楚，語氣中帶點抱怨。",
+        "spoken_content": "這裡好暗，開燈啦。",
+        "taigi_content": "遮足暗，開燈啦。"
+    },
+    {
+        "index": "0114",
+        "intent": "LIGHT_ON",
+        "description": "全部燈都打開",
+        "imagined_scenario": "懷疑有小偷躲在家裡，想把所有燈都打開，讓他無所遁形。",
+        "spoken_content": "把全部的燈都打開！",
+        "taigi_content": "共全部的電火攏開開！"
+    },
+    {
+        "index": "0115",
+        "intent": "LIGHT_ON",
+        "description": "為訪客開燈",
+        "imagined_scenario": "有朋友來訪，為他們打開玄關的燈。",
+        "spoken_content": "開樓梯間的燈。",
+        "taigi_content": "開樓梯的電火。"
+    },
+    {
+        "index": "0116",
+        "intent": "LIGHT_ON",
+        "description": "跌倒後請求開燈",
+        "imagined_scenario": "在黑暗中跌倒，看不清楚周遭狀況，需要開燈確認自己是否受傷。",
+        "spoken_content": "我跌倒了，快開燈！",
+        "taigi_content": "我跋倒矣，緊開燈！"
+    },
+    {
+        "index": "0117",
+        "intent": "LIGHT_ON",
+        "description": "不完整的指令",
+        "imagined_scenario": "剛睡醒，意識還不清楚，含糊地發出指令。",
+        "spoken_content": "燈...打開...",
+        "taigi_content": "燈...開開..."
+    },
+    {
+        "index": "0118",
+        "intent": "LIGHT_ON",
+        "description": "調整亮度（暗到亮）",
+        "imagined_scenario": "覺得目前的燈光不夠亮，需要再亮一點。",
+        "spoken_content": "把燈調亮一點。",
+        "taigi_content": "共電火調較光寡。"
+    },
+    {
+        "index": "0119",
+        "intent": "LIGHT_ON",
+        "description": "口語化的指令",
+        "imagined_scenario": "用非常生活化的口語來要求開燈。",
+        "spoken_content": "把電燈打開。",
+        "taigi_content": "電火切乎開。"
+    },
+    {
+        "index": "0120",
+        "intent": "LIGHT_ON",
+        "description": "開燈以利找藥",
+        "imagined_scenario": "半夜覺得心臟不舒服，想在黑暗中找藥，非常焦急。",
+        "spoken_content": "快開燈，我要找藥！",
+        "taigi_content": "緊開電火，我欲揣藥仔！"
+    },
+    {
+        "index": "0121",
+        "intent": "LIGHT_OFF",
+        "description": "準備睡覺",
+        "imagined_scenario": "已經躺在床上，準備入睡，用平靜的語氣下指令。",
+        "spoken_content": "關燈。",
+        "taigi_content": "關電火。"
+    },
+    {
+        "index": "0122",
+        "intent": "LIGHT_OFF",
+        "description": "燈光太亮刺眼",
+        "imagined_scenario": "偏頭痛發作，對光線很敏感，覺得燈光刺眼不舒服。",
+        "spoken_content": "把燈關掉...太亮了...",
+        "taigi_content": "共電火關掉...傷光矣..."
+    },
+    {
+        "index": "0123",
+        "intent": "LIGHT_OFF",
+        "description": "離開房間",
+        "imagined_scenario": "準備離開客廳回房間睡覺，順手關燈。",
+        "spoken_content": "關掉客廳的燈。",
+        "taigi_content": "關掉客廳的電火。"
+    },
+    {
+        "index": "0124",
+        "intent": "LIGHT_OFF",
+        "description": "簡單指令",
+        "imagined_scenario": "不需要燈光時，直接下達關燈指令。",
+        "spoken_content": "把燈關掉。",
+        "taigi_content": "共電火關掉。"
+    },
+    {
+        "index": "0125",
+        "intent": "LIGHT_OFF",
+        "description": "禮貌的請求",
+        "imagined_scenario": "想請智慧管家關燈，用比較客氣的語氣。",
+        "spoken_content": "麻煩幫我關燈，謝謝。",
+        "taigi_content": "麻煩幫我關電火，多謝。"
+    },
+    {
+        "index": "0126",
+        "intent": "LIGHT_OFF",
+        "description": "節省能源",
+        "imagined_scenario": "白天陽光充足，覺得開燈很浪費電。",
+        "spoken_content": "關燈，省點電。",
+        "taigi_content": "關電火，省寡電。"
+    },
+    {
+        "index": "0127",
+        "intent": "LIGHT_OFF",
+        "description": "指定關閉特定燈具",
+        "imagined_scenario": "只想關掉書桌的檯燈，保留房間主燈。",
+        "spoken_content": "關掉檯燈。",
+        "taigi_content": "關掉檯燈。"
+    },
+    {
+        "index": "0128",
+        "intent": "LIGHT_OFF",
+        "description": "想看電影",
+        "imagined_scenario": "準備在客廳看電影，想關燈營造電影院的氣氛。",
+        "spoken_content": "關燈，我要看電視了。",
+        "taigi_content": "關電火，我欲看電視矣。"
+    },
+    {
+        "index": "0129",
+        "intent": "LIGHT_OFF",
+        "description": "全部燈都關掉",
+        "imagined_scenario": "準備出門，想確保家裡所有的燈都已關閉。",
+        "spoken_content": "關掉全部的燈。",
+        "taigi_content": "關掉全部的電火。"
+    },
+    {
+        "index": "0130",
+        "intent": "LIGHT_OFF",
+        "description": "睡前放鬆",
+        "imagined_scenario": "聽著輕音樂，閉上眼睛準備休息，請裝置關燈。",
+        "spoken_content": "好了，可以關燈了。",
+        "taigi_content": "好矣，會使關電火矣。"
+    },
+    {
+        "index": "0131",
+        "intent": "LIGHT_OFF",
+        "description": "抱怨燈沒關",
+        "imagined_scenario": "發現家人離開房間卻忘了關燈，有點不悅地對著智慧裝置下指令。",
+        "spoken_content": "廁所的燈怎麼還開著，關掉。",
+        "taigi_content": "便所的電火哪會閣開咧，關掉。"
+    },
+    {
+        "index": "0132",
+        "intent": "LIGHT_OFF",
+        "description": "調整亮度（亮到暗）",
+        "imagined_scenario": "覺得燈光太亮，不需要完全關掉，但希望調暗一些。",
+        "spoken_content": "把燈調暗。",
+        "taigi_content": "共電火調較暗寡。"
+    },
+    {
+        "index": "0133",
+        "intent": "LIGHT_OFF",
+        "description": "不想被打擾",
+        "imagined_scenario": "在房間裡想靜一靜，不希望有任何光線打擾。",
+        "spoken_content": "我不需要燈光，關掉。",
+        "taigi_content": "我無需要光線，關掉。"
+    },
+    {
+        "index": "0134",
+        "intent": "LIGHT_OFF",
+        "description": "小孩睡著了",
+        "imagined_scenario": "好不容易把小孩哄睡著了，小聲地請智慧裝置關燈，怕吵醒小孩。",
+        "spoken_content": "（小聲）...關燈...",
+        "taigi_content": "（小聲）...關電火..."
+    },
+    {
+        "index": "0135",
+        "intent": "LIGHT_OFF",
+        "description": "口語化的指令",
+        "imagined_scenario": "用非常生活化的台語口氣要求關燈。",
+        "spoken_content": "電燈切乎關。",
+        "taigi_content": "電燈共伊關。"
+    },
+    {
+        "index": "0136",
+        "intent": "LIGHT_OFF",
+        "description": "回應裝置詢問",
+        "imagined_scenario": "智慧裝置偵測到長時間沒人活動，詢問是否要關燈，使用者給予肯定回覆。",
+        "spoken_content": "對，關燈。",
+        "taigi_content": "著，關電火。"
+    },
+    {
+        "index": "0137",
+        "intent": "LIGHT_OFF",
+        "description": "燈光影響睡眠",
+        "imagined_scenario": "已經躺下很久但因為燈光太亮而睡不著，語氣有點煩躁。",
+        "spoken_content": "關燈啦，睡不著。",
+        "taigi_content": "關電火啦，睏袂去。"
+    },
+    {
+        "index": "0138",
+        "intent": "LIGHT_OFF",
+        "description": "設定睡眠模式",
+        "imagined_scenario": "準備睡覺，下達一個包含關燈的複合指令。",
+        "spoken_content": "要睡了，幫我關燈。",
+        "taigi_content": "袂睏啊，鬥我關電火。"
+    },
+    {
+        "index": "0139",
+        "intent": "LIGHT_OFF",
+        "description": "不完整的指令",
+        "imagined_scenario": "累到快睡著了，含糊地發出關燈的指令。",
+        "spoken_content": "燈...關掉...",
+        "taigi_content": "電火...關掉..."
+    },
+    {
+        "index": "0140",
+        "intent": "LIGHT_OFF",
+        "description": "取消夜燈",
+        "imagined_scenario": "原本開著夜燈，但後來覺得不需要了。",
+        "spoken_content": "把夜燈關掉。",
+        "taigi_content": "共暗頭仔燈關掉。"
+    },
+    {
+        "index": "0141",
+        "intent": "CANCEL_ALERT",
+        "description": "誤觸警報",
+        "imagined_scenario": "不小心碰到緊急按鈕，警報聲大作，嚇了一跳，急忙取消。",
+        "spoken_content": "沒事沒事！取消！是我不小心按到的！",
+        "taigi_content": "無代誌無代誌！取消！是我毋小心按著的！"
+    },
+    {
+        "index": "0142",
+        "intent": "CANCEL_ALERT",
+        "description": "情況已解決",
+        "imagined_scenario": "跌倒後觸發警報，但自己已經慢慢爬起來，覺得不需要外人協助了。",
+        "spoken_content": "我沒事了，取消警報。",
+        "taigi_content": "我無代誌矣，取消警報。"
+    },
+    {
+        "index": "0143",
+        "intent": "CANCEL_ALERT",
+        "description": "直接的取消警報聲指令",
+        "imagined_scenario": "觸發警報後，直接下達明確的取消指令。",
+        "spoken_content": "取消警報。",
+        "taigi_content": "取消警報。"
+    },
+    {
+        "index": "0144",
+        "intent": "CANCEL_ALERT",
+        "description": "小孩誤觸警報",
+        "imagined_scenario": "孫子貪玩按了緊急鈕，警報響起，無奈地跟系統解釋並取消。",
+        "spoken_content": "是小朋友亂按的，沒事，取消掉。",
+        "taigi_content": "是囡仔白目亂按的，無代誌，共取消掉。"
+    },
+    {
+        "index": "0145",
+        "intent": "CANCEL_ALERT",
+        "description": "警報響 表示自己沒問題",
+        "imagined_scenario": "系統可能因為偵測到異常而發出警示，但本人覺得自己沒事，要求取消。",
+        "spoken_content": "我沒事，不用緊張。",
+        "taigi_content": "我無代誌，免緊張。"
+    },
+    {
+        "index": "0146",
+        "intent": "CANCEL_ALERT",
+        "description": "家人已協助",
+        "imagined_scenario": "觸發警報後，同住的家人已經過來幫忙，不再需要對外求援。",
+        "spoken_content": "不用了，我家人來了。",
+        "taigi_content": "免矣，我厝裡的人來矣。"
+    },
+    {
+        "index": "0147",
+        "intent": "CANCEL_ALERT",
+        "description": "只是在測試",
+        "imagined_scenario": "剛裝好系統，想試試看緊急按鈕功能是否正常，測試完後取消。",
+        "spoken_content": "我在測試而已，解除警報。",
+        "taigi_content": "我咧試看覓爾爾，解除警報。"
+    },
+    {
+        "index": "0148",
+        "intent": "CANCEL_ALERT",
+        "description": "不耐煩的取消",
+        "imagined_scenario": "警報聲太吵，或是覺得系統太敏感，有點不耐煩地要求取消。",
+        "spoken_content": "好了啦，就跟你說沒事了！",
+        "taigi_content": "好矣啦，就尬你講無代誌矣！"
+    },
+    {
+        "index": "0149",
+        "intent": "CANCEL_ALERT",
+        "description": "狀況沒有想像中嚴重",
+        "imagined_scenario": "一開始覺得胸悶很嚴重而求救，但休息一下後覺得好多了，想先觀察看看。",
+        "spoken_content": "我好一點了，先取消好了。",
+        "taigi_content": "我較好矣，先取消就好。"
+    },
+    {
+        "index": "0150",
+        "intent": "CANCEL_ALERT",
+        "description": "停止所有警報",
+        "imagined_scenario": "系統可能發出了多重警報，想一次全部取消。",
+        "spoken_content": "停止警報。",
+        "taigi_content": "停止警報。"
+    },
+    {
+        "index": "0151",
+        "intent": "CANCEL_ALERT",
+        "description": "口語化的取消",
+        "imagined_scenario": "用比較生活化的口氣說沒事了。",
+        "spoken_content": "沒事，取消啦。",
+        "taigi_content": "無代誌，取消啦。"
+    },
+    {
+        "index": "0152",
+        "intent": "CANCEL_ALERT",
+        "description": "寵物觸發",
+        "imagined_scenario": "家裡的貓跳到桌上，不小心踩到緊急按鈕，主人趕緊取消。",
+        "spoken_content": "是我們家的貓弄的，取消警報。",
+        "taigi_content": "是阮兜的貓仔創的，取消警報。"
+    },
+    {
+        "index": "0153",
+        "intent": "CANCEL_ALERT",
+        "description": "錯誤警報",
+        "imagined_scenario": "系統可能出現錯誤，無故發出警報，使用者回報是錯誤警報。",
+        "spoken_content": "這是錯誤警報，幫我關掉。",
+        "taigi_content": "這是錯誤警報，鬥我關掉。"
+    },
+    {
+        "index": "0154",
+        "intent": "CANCEL_ALERT",
+        "description": "確認自己沒事",
+        "imagined_scenario": "系統發出警報並詢問「你還好嗎？」，使用者回答並要求取消。",
+        "spoken_content": "我很好，取消。",
+        "taigi_content": "我真好，取消。"
+    },
+    {
+        "index": "0155",
+        "intent": "CANCEL_ALERT",
+        "description": "跌倒後受傷，警報響，語音助理開始聯絡緊急聯繫人，使用者（你）想取消警報",
+        "imagined_scenario": "系統在聯絡緊急聯絡人時，使用者自己已經打通電話，不需要系統繼續了。",
+        "spoken_content": "不用打了，我聯絡上了，取消。",
+        "taigi_content": "免敲矣，我聯絡著矣，取消。"
+    },
+    {
+        "index": "0156",
+        "intent": "CANCEL_ALERT",
+        "description": "解除警示狀態",
+        "imagined_scenario": "不想用「警報」這個詞，換個方式表達取消。",
+        "spoken_content": "解除警示。",
+        "taigi_content": "解除警示。"
+    },
+    {
+        "index": "0157",
+        "intent": "CANCEL_ALERT",
+        "description": "不需要救援",
+        "imagined_scenario": "雖然發生了小狀況，但評估後覺得不需要外部協助。",
+        "spoken_content": "我不需要救援，取消。",
+        "taigi_content": "我無需要救援，取消。"
+    },
+    {
+        "index": "0158",
+        "intent": "CANCEL_ALERT",
+        "description": "打掃時誤觸警報",
+        "imagined_scenario": "用抹布擦拭裝置時，不小心壓到按鈕，引發警報。",
+        "spoken_content": "哎呀，我擦東西不小心按到，快取消。",
+        "taigi_content": "哎呀，我拭物件毋小心按著，緊取消。"
+    },
+    {
+        "index": "0159",
+        "intent": "CANCEL_ALERT",
+        "description": "咳嗽太大聲觸發",
+        "imagined_scenario": "系統可能偵測到劇烈咳嗽聲而觸發警報，但使用者只是感冒，並無大礙。",
+        "spoken_content": "我只是咳嗽而已，沒事，取消掉。",
+        "taigi_content": "我只是咧咳爾爾，無代誌，共取消掉。"
+    },
+    {
+        "index": "0160",
+        "intent": "CANCEL_ALERT",
+        "description": "禮貌地取消警報",
+        "imagined_scenario": "意識到警報可能已經通知了別人，感到不好意思，禮貌地取消。",
+        "spoken_content": "不好意思，是不小心誤觸，麻煩取消警報。",
+        "taigi_content": "歹勢，是毋小心按著，勞煩共警報取消。"
+    }
+]
