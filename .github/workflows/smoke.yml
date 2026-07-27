@@ -1,0 +1,38 @@
+name: smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Validate Python and JavaScript syntax
+        run: |
+          python -m py_compile local_server.py
+          node --check script.js
+          node --check local/mediarecorder-shim.js
+      - name: Start local server and verify core assets
+        shell: bash
+        run: |
+          python local_server.py --no-browser --port 5050 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in {1..20}; do
+            if curl --fail --silent http://127.0.0.1:5050/ >/dev/null; then
+              break
+            fi
+            sleep 0.25
+          done
+          curl --fail --silent http://127.0.0.1:5050/style.css >/dev/null
+          curl --fail --silent http://127.0.0.1:5050/script.js >/dev/null
+          curl --fail --silent http://127.0.0.1:5050/local/mediarecorder-shim.js >/dev/null
