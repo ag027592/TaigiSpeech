@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this dataset or recording app, please cite the paper below."
+title: "TaigiSpeech: A Low-Resource Real-World Speech Intent Dataset"
+authors:
+  - family-names: Chang
+    given-names: Kai-Wei
+  - family-names: Lin
+    given-names: Yi-Cheng
+  - family-names: Chou
+    given-names: Huang-Cheng
+  - family-names: Ren
+    given-names: Wenze
+  - family-names: Huang
+    given-names: Yu-Han
+  - family-names: Tsai
+    given-names: Yun-Shao
+  - family-names: Chen
+    given-names: Chien-Cheng
+  - family-names: Tsao
+    given-names: Yu
+  - family-names: Liao
+    given-names: Yuan-Fu
+  - family-names: Narayanan
+    given-names: Shrikanth
+  - family-names: Glass
+    given-names: James
+  - family-names: Lee
+    given-names: Hung-yi
+repository-code: "https://github.com/ag027592/TaigiSpeech"
+url: "https://kwchang.org/taigispeech/"
+license: CC-BY-4.0
+preferred-citation:
+  type: article
+  title: "TaigiSpeech: A Low-Resource Real-World Speech Intent Dataset and Preliminary Results with Scalable Data Mining In-the-Wild"
+  authors:
+    - family-names: Chang
+      given-names: Kai-Wei
+    - family-names: Lin
+      given-names: Yi-Cheng
+    - family-names: Chou
+      given-names: Huang-Cheng
+    - family-names: Ren
+      given-names: Wenze
+    - family-names: Huang
+      given-names: Yu-Han
+    - family-names: Tsai
+      given-names: Yun-Shao
+    - family-names: Chen
+      given-names: Chien-Cheng
+    - family-names: Tsao
+      given-names: Yu
+    - family-names: Liao
+      given-names: Yuan-Fu
+    - family-names: Narayanan
+      given-names: Shrikanth
+    - family-names: Glass
+      given-names: James
+    - family-names: Lee
+      given-names: Hung-yi
+  journal: "arXiv preprint arXiv:2603.21478"
+  year: 2026
