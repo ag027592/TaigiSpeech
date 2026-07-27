@@ -106,7 +106,17 @@ The full offline bundle includes hundreds of scenario videos and posters and is
 therefore large. For a faster developer checkout, use:
 
 ```bash
-git clone --depth 1 https://github.com/ag027592/TaigiSpeech.git
+git clone --filter=blob:none --sparse https://github.com/ag027592/TaigiSpeech.git
+cd TaigiSpeech
+git sparse-checkout set \
+  index.html style.css script.js local_server.py local start-local.bat \
+  start-local.command gemini_2026_pro_preview_0121_160_data_proof.json
+```
+
+Add the offline media only when needed:
+
+```bash
+git sparse-checkout add videos posters assets
 ```
 
 Media is intentionally bundled so the field app remains usable with no network
